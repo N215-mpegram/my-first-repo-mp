@@ -9,3 +9,57 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px
 }
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: antiquewhite;
+
+    .respo-box {
+        width: 90%;
+        margin: 0 auto;
+        background-color: cornflowerblue;
+        min-height: 400px;
+
+        .boxes {
+            width: 100%;
+            min-height: 50px;
+            background-color: burlywood;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .left {
+                width: 300px;
+                height: 50px;
+                background-color: coral;
+            }
+
+            .right {
+                width: 300px;
+                height: 50px;
+                background-color: crimson;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 740px) {
+    .wrapper {
+        .respo-box {
+            .boxes {
+                flex-direction: column;
+                margin-bottom: 20px;
+                
+                .left {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
