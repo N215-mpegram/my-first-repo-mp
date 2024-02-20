@@ -1,0 +1,16 @@
+{
+  "name": "my-first-repo-mp",
+  "version": "1.0.0",
+  "description": "This is my first repo in N215.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass scss/styles.scss css/styles.css -w",
+    "serve": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.71.0"
+  }
+}
